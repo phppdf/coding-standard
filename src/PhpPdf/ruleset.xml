@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<ruleset name="PhpPdf"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../../vendor/squizlabs/php_codesniffer/phpcs.xsd">
+    <description>The PhpPdf coding standard.</description>
+
+    <rule ref="SlevomatCodingStandard">
+        <exclude name="Squiz.Commenting.FunctionComment.SpacingAfterParamName" var_space="2"/>
+        <exclude name="SlevomatCodingStandard.Commenting.DisallowCommentAfterCode.DisallowedCommentAfterCode"/>
+        <exclude name="SlevomatCodingStandard.ControlStructures.NewWithoutParentheses.UselessParentheses"/>
+        <exclude name="SlevomatCodingStandard.Files.TypeNameMatchesFileName.NoMatchBetweenTypeNameAndFileName"/>
+        <exclude name="SlevomatCodingStandard.Functions.DisallowTrailingCommaInCall.DisallowedTrailingComma"/>
+        <exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedExceptions.NonFullyQualifiedException"/>
+        <exclude name="SlevomatCodingStandard.Namespaces.FullyQualifiedGlobalFunctions.NonFullyQualified"/>
+        <exclude name="SlevomatCodingStandard.Namespaces.UseOnlyWhitelistedNamespaces"/>
+        <exclude name="SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly"/>
+        <exclude name="SlevomatCodingStandard.Operators.DisallowIncrementAndDecrementOperators.DisallowedPostIncrementOperator"/>
+        <exclude name="SlevomatCodingStandard.TypeHints.UnionTypeHintFormat"/>
+        <exclude name="SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces"/>
+        <exclude name="SlevomatCodingStandard.ControlStructures.RequireYodaComparison.RequiredYodaComparison"/>
+        <exclude name="SlevomatCodingStandard.Files.FileLength.FileTooLong"/>
+        <exclude name="SlevomatCodingStandard.Classes.ClassLength.ClassTooLong"/>
+        <exclude name="SlevomatCodingStandard.PHP.DisallowReference.DisallowedPassingByReference"/>
+        <exclude name="SlevomatCodingStandard.Functions.UnusedParameter.UnusedParameter"/>
+    </rule>
+
+    <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
+        <properties>
+            <property name="spacesCountAroundEqualsSign" value="0"/>
+        </properties>
+    </rule>
+
+    <rule ref="SlevomatCodingStandard.Attributes.AttributesOrder">
+        <properties>
+            <property name="orderAlphabetically" value="true"/>
+        </properties>
+    </rule>
+</ruleset>

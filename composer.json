@@ -1,0 +1,32 @@
+{
+  "type": "phpcodesniffer-standard",
+  "name": "phppdf/coding-standard",
+  "description": "The coding standards for PHP_CodeSniffer we use at phppdf.",
+  "homepage": "https://github.com/phppdf",
+  "license": "MIT",
+  "keywords": [
+    "phppdf",
+    "coding-standard",
+    "coding-standards",
+    "coding",
+    "standard",
+    "standards",
+    "cs",
+    "code",
+    "style",
+    "sniffer",
+    "rules",
+    "sniffs",
+    "checks"
+  ],
+  "require": {
+    "php": ">=8.4",
+    "slevomat/coding-standard": "^8.29"
+  },
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  }
+}
